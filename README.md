@@ -3,7 +3,8 @@
 ### **Case Study Selection Motivation**
 As a developer I have built apps with both SOA or Search capabilities. It would have been relatively easy to 
 spin up a ReSTful service using SpringBoot or implement search with search engine like Lucene. I have always 
-loved to write algorithms that can help solve problems. I think this problems lets me showcase my skills the best.
+loved to write algorithms that can help solve problems. I think this problems lets me showcase my skills the best,
+without hiding behind frameworks, which is why I naturally gravitated toward this problem.
 
 ##### **Problem statement**
 
@@ -44,7 +45,7 @@ barren patches. The approach is as below:
  5. When all barren patches are accounted for. The algorithm determines islands of contiguous patches.
  6. Sum of area of all contiguous patches is then summed, stored and returned.
   
-![Rectangle Split](RectangleSplit.png | width=100)
+![Rectangle Split](RectangleSplit.png)
 
 #### Complexity:
 BFS/Flood Fill/Forest Fire algorithm would require space to save (400 X 600) points and multiple iterations 
@@ -69,9 +70,8 @@ mvn clean install (runs junit tests)
 mvn clean install -DskipTests (to ignore/ skip junits)
 ```
 
-3. Run the Application
+3. Run the Application from command line
 ```
-Run the application, by using the command.
 java -jar target/BarrenLandAnalysis-1.0-SNAPSHOT.jar  "{“48 192 351 207”, “48 392 351 407”, “120 52 135 547”, “260 52 275 547”}"
 ```
  
